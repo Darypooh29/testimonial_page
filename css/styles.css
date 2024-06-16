@@ -1,0 +1,57 @@
+* {
+  font-family: "Sora", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --yellow: #f5c044;
+  --green: #4ca154;
+  --black: #18181b;
+  --gray: #52525a;
+  --gray-white: #d4d4d8;
+  --white: #ffffff;
+  --white-low: #fafaf9;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.heading__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+}
+
+.heading__title {
+  color: var(--black);
+  font-size: 2.25rem;
+}
+
+.main__content-description {
+  color: gray;
+  font-size: 1.25rem;
+}
+
+.main__content-checklist {
+  color: var(--gray);
+  font-size: 0.875rem;
+}
+
+.main__content-testmonial-cards {
+  font-size: 1rem;
+}
+
+@media (min-width: 641px) {
+  body {
+    flex-direction: row;
+  }
+}
